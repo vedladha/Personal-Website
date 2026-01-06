@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vedant Ladha | Personal Website</title>
+    <meta
+      name="description"
+      content="Portfolio of Vedant Ladha."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">VL</div>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home / Hero -->
+      <section id="home" class="section hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Vedant Ladha</h1>
+          <p class="eyebrow">Software Engineer</p>
+          <p class="hero-subtitle">
+            Over the past few years, I’ve built a broad technical foundation by working across systems, data, and applied AI—ranging from secure data pipelines to performance optimization using intelligent algorithms. I enjoy building things end-to-end, whether that’s a startup concept, a personal project, or experimenting with new technologies just for the fun of it. I’m especially driven by solving problems at scale through distributed systems and automation. Outside of tech, I enjoy exploring fashion, traveling, and playing football.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#connect" class="btn btn-ghost">Let’s Connect</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-profile-image">
+            <img src="./images/picture.jpeg" alt="Vedant Ladha" /> 
+          </div>
+          <div class="hero-highlight">
+            <span class="badge">Available for work</span>
+            <p>Open to Full-time roles.</p>
+          </div>
+          <ul class="hero-meta">
+            <li>
+              <span class="label">Focus</span>
+              <span class="value">Backend Systems • Cloud Infrastructure • Data & ML</span>
+            </li>
+            <li>
+              <span class="label">Based in</span>
+              <span class="value">Madison, WI</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Work Experience -->
+      <section id="experience" class="section">
+        <div class="section-header">
+          <h2>Work Experience</h2>
+        </div>
+        <div class="experience-list">
+          <a href="#" class="experience-item" target="_blank" rel="noreferrer">
+            <div class="experience-content">
+              <span class="experience-role">Venture Build Fellow</span>
+              <span class="experience-company">UW Tech Exploration Lab</span>
+            </div>
+            <span class="experience-date">Sep 2025 - Present</span>
+            <span class="experience-arrow">↗</span>
+          </a>
+          <a href="#" class="experience-item" target="_blank" rel="noreferrer">
+            <div class="experience-content">
+              <span class="experience-role">Software Engineering Intern</span>
+              <span class="experience-company">Birlasoft Limited</span>
+            </div>
+            <span class="experience-date">June 2024 - Sep 2024</span>
+            <span class="experience-arrow">↗</span>
+          </a>
+          <a href="#" class="experience-item" target="_blank" rel="noreferrer">
+            <div class="experience-content">
+              <span class="experience-role">Peer Mentor</span>
+              <span class="experience-company">UW-Madison, Department of Computer Science</span>
+            </div>
+            <span class="experience-date">Aug 2023 - Dec 2023</span>
+            <span class="experience-arrow">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Projects -->
+<section id="projects" class="section section-alt">
+  <div class="section-header">
+    <h2>Projects</h2>
+  </div>
+
+  <!-- wrapper controls collapsed/expanded state -->
+  <div class="projects-wrapper projects-collapsed" id="projects-wrapper">
+    <div class="projects-grid" id="projects-grid">
+      <article class="project-card">
+        <h3>Spectra</h3>
+        <p>
+          A cloud-native ML platform that detects, clusters, and forecasts emerging social trends in near real time with low-latency pipelines.
+        </p>
+        <ul class="project-meta">
+          <li>Python</li>
+          <li>FastAPI</li>
+          <li>AWS</li>
+          <li>Next.js</li>
+          <li>ML</li>
+          <li>Observability</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>Skill Forage</h3>
+        <p>
+          A full-stack platform connecting learners and mentors using real-time chat, intelligent matching, and production-grade cloud infrastructure.
+        </p>
+        <ul class="project-meta">
+          <li>MERN</li>
+          <li>WebSockets</li>
+          <li>AWS</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noreferrer">Case study</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>Cache-Sim</h3>
+        <p>
+          A low-level cache simulator in C that models L1/L2 behavior, eviction policies, and concurrent memory access at scale.
+        </p>
+        <ul class="project-meta">
+          <li>C</li>
+          <li>Linux</li>
+          <li>Concurrency</li>
+          <li>Cache Design</li>
+          <li>Systems Programming</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <h3>Health Tracker</h3>
+        <p>
+          A machine-learning pipeline that predicts health outcomes in real time and recommends personalized lifestyle improvements.
+        </p>
+        <ul class="project-meta">
+          <li>Python</li>
+          <li>Scikit-learn</li>
+          <li>Flask API</li>
+        </ul>
+        <div class="project-links">
+          <a href="#" target="_blank" rel="noreferrer">Case study</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="projects-more" id="projects-more">
+      <button
+        class="projects-more-btn"
+        id="toggle-projects"
+        type="button"
+        aria-expanded="false"
+      >
+        see more projects
+      </button>
+    </div>
+  </div>
+</section>
+
+      <!-- Connect -->
+      <section id="connect" class="section">
+        <div class="section-header">
+          <h2>Let’s Connect</h2>
+        </div>
+        <div class="connect-layout">
+          <div class="connect-card">
+            <h3>Contact</h3>
+            <p class="connect-copy">
+              Feel free to contact me at
+              <a href="mailto:vladha@wisc.edu">vladha@wisc.edu</a>.
+            </p>
+            <div class="contact-pills" aria-label="Contact links">
+              <a
+                class="contact-pill"
+                href="https://github.com/vedladha"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>GitHub</span>
+                <span class="pill-arrow">↗</span>
+              </a>
+              <a
+                class="contact-pill"
+                href="https://linkedin.com/in/vedantladha"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>LinkedIn</span>
+                <span class="pill-arrow">↗</span>
+              </a>
+              <a
+                class="contact-pill"
+                href="mailto:vladha@wisc.edu"
+              >
+                <span>Email</span>
+                <span class="pill-arrow">✉</span>
+              </a>
+              <a
+                class="contact-pill"
+                href="Vedant Ladha Resume.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>Resume</span>
+                <span class="pill-arrow">↗</span>
+              </a>
+            </div>
+          </div>
+          <form class="connect-form" id="contact-form" action="https://formsubmit.co/vladha@wisc.edu" method="POST" autocomplete="on">
+            <h3>Quick message</h3>
+            <input type="hidden" name="_subject" value="New message from your website">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="?success=true">
+            <div class="field-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field-group">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="field-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell me a bit about what you're looking for..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit-btn">
+              Send Message
+            </button>
+            <p class="form-note" id="form-status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Vedant Ladha. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
